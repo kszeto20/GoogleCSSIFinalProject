@@ -1,0 +1,170 @@
+<!--
+1. fix the like button
+2. fix the background image
+3. 
+
+-->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lyrics Generator</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <!-- Bulma Version 0.9.0-->
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="format.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
+</head>
+
+<body>
+  <!--  Header: Intro, nav bar, + search bar  -->
+  <section class="hero is-black is-fullheight bac-img">
+    
+    <!--   Intro + Search Bar + Search Button  -->
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <div class="column is-6 is-offset-3">
+          <!--     Intro       -->
+          <h1 class="title has-text-info-dark">
+            Music Search
+          </h1>
+          <h2 class="subtitle">
+            Search for your song...
+          </h2>
+          <!--      Song Name Search Bar   id: name-search   class: searching, input   -->
+          <div class="box">
+            <div class="field is-grouped">
+              <p class="control is-expanded">
+                <input class="input" id="name-search" type="text" placeholder="Enter the name of a song"
+                  onclick="displayHistory()">
+              </p>
+              <!--          search button    id:go-search-name        -->
+              <p class="control">
+                <a class="button is-black" id="go-search-name">
+                  <strong>Search</strong>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="search-history"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  Result section  -->
+  <section class="sec hidden" id="result">
+    <h1 class="title" id="resultC"> Result </h1>
+    <!--   please put the modal cards from your search result into this section :) id = result-list   -->
+    <div id="result-list"></div>
+  </section>
+
+  <!--   slider -->
+   <section class="timeline">
+    <h1 class="title" id="time-slider"> Explore </h1>
+    <div id="time-list">
+      <div class="song-history-list" id="12671107">
+        <p class="time year">1940s</p>
+        <div class="timecard">
+          <figure>
+            <img id="white-christmas" src=""></img>
+          </figure>
+          <div class="function">
+            <p class="time">White Christmas</p>
+          </div>
+        </div>
+      </div>
+      <div class="song-history-list" id="2365665">
+        <p class="time year">1950s</p>
+        <div class="timecard">
+          <figure>
+          <img id="We’re-Gonna-Rock-Around-the-Clock" src=""></img>
+        </figure>
+          <div class="function">
+            <p class="time">We're Gonna Rock Around the Clock</p>
+          </div>
+        </div>
+      </div>
+      <div class="song-history-list" id="2452265">
+        <p class="time year">1960s</p>
+        <div class="timecard">
+          <figure>
+            <img id="Hey-Jude" src=""></img>
+          </figure>
+          <div class="function">
+            <p class="time">Hey Jude</p>
+          </div>
+        </div>
+      </div>
+      <div class="song-history-list" id="7861906">
+        <p class="time year">1970s</p>
+        <div class = "timecard">
+        <figure>
+          <img id="Bohemian-Rhapsody" src=""></img>
+        </figure>
+          <div class="function">
+            <p class="time">Bohemian Rhapsody</p>
+          </div>
+        </div>
+      </div>
+      <div class="song-history-list" id="171739">
+        <p class="time year">1980s</p>
+        <div class="timecard">
+          <figure>
+            <img id="Billie-Jean" src=""></img>
+          </figure>
+          <div class="function">
+            <p class="time">Billie Jean</p>
+          </div>
+        </div>
+      </div>
+      <div class="song-history-list" id="208687">
+        <p class="time year">1990s</p>
+        <div class="timecard">
+          <figure>
+          <img id="I-Believe-I-Can-Fly src=""></img>
+        </figure>
+          <div class="function">
+            <p class="time">I Believe I Can Fly</p>
+          </div>
+        </div>
+      </div>
+      <div class=" song-history-list" id="13221761">
+        <p class="time year">2000s</p>
+        <div class="timecard">
+          <figure>
+          <img id="We-Belong-Together" src=""></img>
+        </figure>
+          <div class="function">
+            <p class="time">We Belong Together</p>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+  </section>
+
+
+
+  <!--  My Playlist section  -->
+  <section class="clusterCard" id="playlist">
+    <h1 class="title"> My Playlist </h1>
+    <!--   please put the modal cards of the liked songs into this section :) id = liked-list   -->
+    <div id="liked-list"></div>
+    <div id="mus-vid"></div>
+  </section>
+
+  <script src="script.js"></script>
+  <script src="searchhistory.js"> </script>
+  <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
+</body>
+
+</html>

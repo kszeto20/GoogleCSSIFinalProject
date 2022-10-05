@@ -1,0 +1,144 @@
+.parent {
+  display:flex;
+  flex-direction:column;
+  justify-content: right;
+  height: 100vh;
+  background: linear-gradient(#334d57, #799096); 
+  color: #fff;
+  font-weight:bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.home {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.home button {
+  background-color: #334d57;
+  padding: 10px;
+/*   color: black; */
+  width: 6em;
+  color: #799096;
+  border-color:  #c5dce2;
+}
+
+.home button:hover {
+  background-color:  #8dadb4;
+}
+
+.outer {
+  display:flex;
+  align-items:center;
+}
+
+#player {
+  height:0;
+}
+
+.parent{
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: left;
+  border-style: outset;
+  border-radius: 5px;
+  gap: 1.2%;
+}
+
+.box1{
+  display:flex;
+  flex-direction: column;
+  border: solid;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 10px;
+
+  width: 50vh;
+  
+  font-size: 20px;
+  background-color:#d3eeed;
+  color: #000000;
+}
+
+#albumArt {
+  border: solid;
+}
+
+#songName {
+  padding-top: 5px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+}
+
+#artistName {
+  padding-top: 0px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.box2{
+  display:flex;
+  flex-direction: column;
+  flex-grow: 1;
+/*   border: 10px solid; */
+  border-radius: 5px;
+  margin: 20px;
+  padding: 3em;
+
+  height:50vh;
+  width: 90vh;
+  
+  overflow-y: scroll;
+  text-align:center;
+  font-size: 30px;
+}
+
+.box2::-webkit-scrollbar {
+  width: 0;
+}
+
+#albumArt {
+  height: 1000%;
+  width: 5000%;
+}
+
+.outer button {
+  background-color:#4c7d8a;
+  border-radius: 5px;
+  width: 100%;
+  border: 2px solid #030303;
+  padding: 9px;
+}
+
+.outer button:hover {
+  background-color: #345e6a;
+}
+
+/* .outer button i {
+  color: black;
+  padding-right: 6px;
+  font-size: 20px;
+} */
+
+.outer button span {
+  color: black;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.button {
+  padding:10px;
+}
+
+/* Hide Youtube Video */
+
+.hiddenFrame{
+  height:1px;
+  width:1px;
+  opacity: 0;
+}

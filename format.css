@@ -1,0 +1,277 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.box {
+  margin: 0;
+  padding:5px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 16px;
+}
+
+/* Top part of the website */
+.bac-img {
+  background-image: url("https://images.unsplash.com/photo-1623171830407-cefa8cedad73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Search button */
+
+#go-search-name {
+  background-color: #fbc4ac;
+  transition: 0.3s;
+  color: #000000;
+}
+
+#go-search-name:hover {
+  background-color: #db9b80;
+  color: #000000;
+}
+
+.title {
+  color: #000000;
+}
+
+.subtitle {
+  color: #000000;
+}
+
+/* Button */
+
+.cardBtn{
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #4c7d8a;
+  width: 100%;
+/*   z-index:10; */
+}
+
+.cardBtn:hover{
+  background-color: #345e6a;
+}
+
+.blue:hover {
+  color: #4c7d8a;
+}
+
+/* Stuff for the result */
+#result-list {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+/*   flex-direction: column; */
+}
+
+.card{
+  justify-content: center;
+  gap: 20px;
+  width: 20%;
+  margin: 10px;
+}
+
+.clusterCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card:hover {
+  box-shadow: 8px 8px 8px 8px #274049;
+}
+
+.content{
+  padding:0;
+  margin:0;
+  font-size: 15px;
+  font-weight: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.songName{
+  padding:0;
+  margin:0;
+  padding-top: 20px;
+  text-align: center;
+  font-weight: 5px;
+}
+
+.artist{
+  text-align: center;
+  font-weight: 5px;
+  padding-bottom: 20px;
+}
+
+#result {
+  padding: 5em;
+  background-image: linear-gradient(to bottom right, #2d444d, #bcd1d7);
+  color: #000000;
+}
+
+/* search history drop down */
+.search-history-item {
+  display: flex;
+  font-weight: bold;
+}
+
+.search-history-item i {
+  padding-right: 10px; 
+}
+
+.search-history-item:hover {
+  background-color: #98bbe2;
+}
+
+.search-history {
+  background-color: #fff;
+  color:black;
+  margin:0;
+  padding:10px;
+  border:0;
+}
+
+
+/* For the timeline */
+.timeline {
+  padding: 5em;
+  background-image: linear-gradient(to bottom right,#334d57, #5e7378);
+}
+
+#time-list {
+  display: flex;
+  flex-direction:row;
+  justify-content: start;
+  overflow-x: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.time {
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+  text-align: center;
+}
+
+.timecard{
+  transition:.9s;
+  background-color: white;
+  width: 250px;
+  height: 390px; 
+}
+
+.timecard img{
+  transition: .9s;
+  filter: grayscale(70%);
+}
+
+.function .time {
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+#time-list::-webkit-scrollbar {
+  width: 0;
+}
+
+.time::-webkit-scrollbar {
+  width: 0;
+}
+
+.song-history-list {
+  padding:0;
+  margin:0;
+}
+
+.song-history-list:hover {
+  transition:.8s;
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1); 
+}
+
+.timecard button {
+  font-weight: bold;
+}
+
+.function {
+  justify-content:center;
+  align-items: center;
+} */
+
+#time-list::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Playlist stuff */
+#playlist {
+  padding: 5em;
+  background-image: linear-gradient(to bottom right,#799096, #bcd1d7);
+  color: #ffffff;
+}
+
+#liked-list {
+  display: flex;
+  flex-direction:row;
+  justify-content: start;
+  overflow-x: auto;
+  padding-top: 1em;
+}
+
+.my-fav-song {
+  background-color: #ededed;
+  max-width: 250px;
+  max-height: 390px; 
+  min-width: 250px;
+  min-height: 390px; 
+  transition:.5s;
+  border: 2px solid black;
+}
+
+.my-fav-song:not(:first-child) {
+  margin-left: -4em;
+}
+
+.my-fav-song:hover {
+  transform: translateY(-1rem);
+}
+.my-fav-song:hover ~ .my-fav-song {
+  transform: translateX(4rem);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#liked-list::-webkit-scrollbar {
+  width: 0;
+}
+
+.txt {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.txtname {
+  padding-bottom: 13px;
+}
+
+.txtbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
